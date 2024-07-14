@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bakery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to My Bakery</h1>
+    </header>
+
+    <section id="introduction">
+        <h2>About Us</h2>
+        <p>Welcome to My Bakery! We offer the best pastries and cakes in town.</p>
+    </section>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product">
+            <h3>Chocolate Cake</h3>
+            <p>Delicious chocolate cake</p>
+            <button onclick="orderProduct('Chocolate Cake')">Order Now</button>
+        </div>
+        <div class="product">
+            <h3>Vanilla Cupcake</h3>
+            <p>Sweet vanilla cupcake</p>
+            <button onclick="orderProduct('Vanilla Cupcake')">Order Now</button>
+        </div>
+    </section>
+
+    <section id="order-form" style="display:none;">
+        <h2>Place Your Order</h2>
+        <form id="orderForm" onsubmit="submitOrder(event)">
+            <input type="hidden" id="productName" name="productName">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+            <label for="deliveryDate">Delivery Date:</label>
+            <input type="date" id="deliveryDate" name="deliveryDate" required>
+            <label for="paymentScreenshot">Upload Payment Screenshot:</label>
+            <input type="file" id="paymentScreenshot" name="paymentScreenshot" accept="image/*" required>
+            <button type="submit">Submit Order</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@mybakery.com</p>
+        <p>Phone: 123-456-7890</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

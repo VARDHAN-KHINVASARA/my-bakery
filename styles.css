@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fefae0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #faedcd;
+    padding: 20px;
+    text-align: center;
+}
+
+h1,
+h2 {
+    color: #d4a373;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #e9edc9;
+    background-color: #e9edc9;
+    border-radius: 5px;
+}
+
+.product {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #d4a373;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ccd5ae;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label,
+form input,
+form button {
+    margin: 10px 0;
+}
