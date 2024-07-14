@@ -34,7 +34,8 @@
 
     <section id="order-form" style="display:none;">
         <h2>Place Your Order</h2>
-        <form id="orderForm" onsubmit="submitOrder(event)">
+        <form id="orderForm" action="https://Vardhan18.pythonanywhere.com/submit-order" method="post" enctype="multipart/form-data" onsubmit="submitOrder(event)">
+
             <input type="hidden" id="productName" name="productName">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
